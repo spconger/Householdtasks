@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>All Tasks</h2>
+<table class='table'>
+    <tr>
+        <th>Task</th>
+        <th>Date Entered</th>
+        <th>Status</th>
+    </tr>
+    {% for t in task_list %}
+      <tr>
+          <td>{{ t.taskname }}</td>
+          <td>{{ t.dateentered }}</td>
+          <td>{{ t.status }}</td>
+      </tr>
+      {% endfor %}
+</table>
+
+{%  endblock %}
+

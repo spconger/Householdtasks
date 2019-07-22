@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<img src="{% static 'small-blue-house.jpg' %}" alt='small blue house' style='float: left;'>
+<h2>Household Task Manager</h2>
+
+<p>This is an app to track a long list of household tasks and improvement activities. </p>
+<p>So many tasks have been set aside for so long, the goal is to get them set up where I have to look at them
+    daily, so maybe get some of them done.
+</p>
+<p><strong>Total tasks:</strong> {{ task_count }}</p>
+
+{% endblock %}
